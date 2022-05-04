@@ -32,15 +32,22 @@ const checkNotExisted = function(item, array) {
 const without = function(source, itemsToRemove) {
   let result = [];
   for (let i = 0; i < source.length; i++) {
-    if (checkNotExisted(source[i], itemsToRemove)) {
+    /*if (checkNotExisted(source[i], itemsToRemove)) {
+      result.push(source[i]);
+    }*/
+    if (itemsToRemove.includes(source[i]) === false) {
       result.push(source[i]);
     }
   }
   return result;
 };
 
+// Define a result = [];
+// For loop -> insde the for loop check if each element is not existed in array itemsToRemove then push that element to result array
+// Return result
+
 const words = ["hello", "world", "lighthouse"];
-const result = without(words, []); // no need to capture return value for this test case
+const result = without(words, ["world", "hello"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 console.log(result);
