@@ -19,4 +19,5 @@ const countLetters = function(string) {
   return result;
 };
 
-console.log(countLetters("Light house labs"));
+//console.log(countLetters("Light house labs"));
+module.exports = countLetters;

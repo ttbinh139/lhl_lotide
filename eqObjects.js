@@ -42,7 +42,7 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-const ab = { a: "1", b: "2", c: "5" };
+/* const ab = { a: "1", b: "2", c: "5" };
 const ba = { a: "1", b: "2", c: "5" };
 //console.log(eqObjects(ab, ba)); // => true
 
@@ -54,4 +54,6 @@ const dc = { d: ["2", 3], c: "1" };
 //console.log(eqObjects(cd, dc)); // => true
 
 const cd2 = { c: false };
-console.log(eqObjects(cd, cd2)); // => false
+console.log(eqObjects(cd, cd2)); // => false */
+
+module.exports = eqObjects;

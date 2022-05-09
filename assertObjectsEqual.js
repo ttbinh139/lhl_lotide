@@ -46,10 +46,12 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-const ab = { a: "1", b: "2", c: [2] };
+/* const ab = { a: "1", b: "2", c: [2] };
 const ba = { a: "1", b: "2", c: [1] };
 //assertObjectsEqual(ab, ba);
 
 const cd = { c: "1", d: [ 2, 3], de: true };
 const dc = { d: [ 2, 3], c: "1", de: true};
-assertObjectsEqual(cd, dc);
+assertObjectsEqual(cd, dc); */
+
+module.exports = assertObjectsEqual;

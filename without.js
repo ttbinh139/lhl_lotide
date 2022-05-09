@@ -41,8 +41,8 @@ const without = function(source, itemsToRemove) {
   }
   return result;
 };
-
-// Define a result = [];
+module.exports = without;
+/* // Define a result = [];
 // For loop -> insde the for loop check if each element is not existed in array itemsToRemove then push that element to result array
 // Return result
 
@@ -50,4 +50,4 @@ const words = ["hello", "world", "lighthouse"];
 const result = without(words, ["world", "hello"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
-console.log(result);
+console.log(result); */
