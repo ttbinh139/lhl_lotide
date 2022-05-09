@@ -14,5 +14,9 @@ describe("#head", () => {
 
   it("return 5 for [5]", () => {
     assert.strictEqual(head([5]), 5);
-  })
+  });
+
+  it("empty array should return undefined", function(){
+    assert.strictEqual(head([]), undefined);
+  });
 });
