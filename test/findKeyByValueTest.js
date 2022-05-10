@@ -11,7 +11,7 @@ const assert = require('chai').assert;
 const findKeyByValue = require('../findKeyByValue');
 
 describe("findKeyByValue", function() {
-  it("shoule return drama", function() {
+  it("Shoule return drama", function() {
     const bestTVShowsByGenre = { 
       sci_fi: "The Expanse",
       comedy: "Brooklyn Nine-Nine",
@@ -21,7 +21,7 @@ describe("findKeyByValue", function() {
     assert.equal(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
   });
 
-  it("should return undefined", function() {
+  it("Should return undefined", function() {
     const bestTVShowsByGenre = { 
       sci_fi: "The Expanse",
       comedy: "Brooklyn Nine-Nine",

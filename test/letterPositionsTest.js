@@ -12,6 +12,13 @@ describe("#letterPositions", function() {
     assert.deepEqual(result, expected)
   });
 
+  it("h shoule return {h:[0]}", function() {
+    const text = "h";
+    const result = letterPositions(text);
+    const expected = {h:[0]};
+    assert.deepEqual(result, expected)
+  });
+
   it("empty string should return empty object", function() {
     assert.deepEqual(letterPositions(""), {})
   });

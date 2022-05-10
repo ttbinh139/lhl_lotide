@@ -6,7 +6,15 @@ const assert = require('chai').assert;
 const flatten = require('../flatten');
 
 describe("#flatten", function(){
-  it("[1, 2, [3, 4], 5, [6]]] should return [1, 2, 3 ,4 ,5 ,6]", function() {
+  it("[1, 2, [3, 4], 5, [6]] should return [1, 2, 3 ,4 ,5 ,6]", function() {
     assert.deepEqual(flatten([1, 2, [3, 4], 5, [6]]),[1, 2, 3 ,4 ,5 ,6] )
   });
+  it("[1, [2]] should return [1, 2]", function() {
+    assert.deepEqual(flatten([1, [2]]),[1, 2] )
+  });
+
+  it("[] should return []", function() {
+    assert.deepEqual(flatten([]),[] )
+  });
+  
 });
